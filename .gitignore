@@ -1,0 +1,48 @@
+# --- Terraform working files ---
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Saved plans can contain secrets in plain text
+*.tfplan
+tfplan
+
+# Personal or sensitive variable values (alert email, etc.).
+# Committed config lives in *.auto.tfvars and the per-region tfvars files.
+terraform.tfvars
+terraform.tfvars.json
+*.secret.tfvars
+
+# Local-only overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config files may hold credentials
+.terraformrc
+terraform.rc
+
+# NOTE: .terraform.lock.hcl is NOT ignored. Commit it so every run uses the
+# same provider versions.
+
+# --- Pipeline scratch files ---
+plan.txt
+comment.md
+
+# --- Credentials and environment files ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+
+# --- Editors and OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

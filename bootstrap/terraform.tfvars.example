@@ -1,0 +1,12 @@
+# Copy to terraform.tfvars and fill in. terraform.tfvars is gitignored.
+
+github_owner        = "your-github-username"
+github_repo         = "failover-arcade-infra"
+budget_alert_emails = ["you@example.com"]
+
+# Optional overrides (defaults shown)
+# project             = "failover-arcade"
+# env                 = "prod"
+# primary_region      = "ca-central-1"
+# github_apply_branch = "main"
+# budget_limit_usd    = 30
